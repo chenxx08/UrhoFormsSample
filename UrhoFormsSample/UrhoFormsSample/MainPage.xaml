@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UrhoFormsSample"
+             x:Class="UrhoFormsSample.MainPage"
+             Title="Main page">
+
+    <StackLayout>
+        <ListView x:Name="ListView" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label HorizontalOptions="FillAndExpand" Text="{Binding}"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Go!" Clicked="Button_OnClicked"></Button>
+
+    </StackLayout>
+</ContentPage>

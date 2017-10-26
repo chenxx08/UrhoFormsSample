@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UrhoFormsSample.DetailPage"
+             Title="Detail page">
+    <ListView x:Name="ListView" VerticalOptions="FillAndExpand">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <Label HorizontalOptions="FillAndExpand" Text="{Binding Name}" FontSize="22"/>
+                        <Label HorizontalOptions="FillAndExpand" Text="{Binding Age}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
