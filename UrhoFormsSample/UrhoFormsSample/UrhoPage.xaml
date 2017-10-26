@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:Urho.Forms;assembly=Urho.Forms"
              x:Class="UrhoFormsSample.UrhoPage"
-             Title="Charts page">
+             Title="Urho page">
     <StackLayout>
         <forms:UrhoSurface x:Name="UrhoSurface" VerticalOptions="FillAndExpand"/>
         <Button Text="Go detail!" Clicked="Button_OnClicked"></Button>
