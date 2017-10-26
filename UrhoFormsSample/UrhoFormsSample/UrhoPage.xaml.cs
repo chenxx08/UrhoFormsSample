@@ -30,7 +30,12 @@ namespace UrhoFormsSample
             {
                 Orientation = ApplicationOptions.OrientationType.Landscape
             };
+
+            //large scene will cause crash when back key pressed.
             _app = await UrhoSurface.Show<HugeObjectCount>(options);
+            
+            //small scene will not cause crash
+            //_app = await UrhoSurface.Show<Charts>(options);
         }
 
         protected override void OnDisappearing()

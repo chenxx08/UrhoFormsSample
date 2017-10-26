@@ -38,6 +38,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Charts.cs" />
+    <Compile Include="RandomHelper.cs" />
     <Compile Include="UrhoPage.xaml.cs">
       <DependentUpon>UrhoPage.xaml</DependentUpon>
     </Compile>
